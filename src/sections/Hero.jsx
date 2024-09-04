@@ -8,7 +8,7 @@ import { bigShoe1 } from "../assets/images";
 import ShoeCard from "../components/ShoeCard";
 
 const Hero = () => {
-  const [bigShoeImg, setbigShoeImg] = useState(bigShoe1)
+  const [bigShoeImg, setbigShoeImg] = useState(bigShoe1);
   return (
     <section
       id="home"
@@ -67,7 +67,9 @@ const Hero = () => {
             <div key={shoe}>
               <ShoeCard
                 imgURL={shoe}
-                changeBigShoeImage={(shoe) => {setbigShoeImg(shoe)}}
+                changeBigShoeImage={(shoe) => {
+                  setbigShoeImg(shoe);
+                }}
                 bigShoeImg={bigShoeImg}
               />
             </div>
